@@ -1,6 +1,5 @@
 //Getting address/location of start,stop,reset buttons
-
-var startButton = document.getElementsByClassName("start");    
+var startButton = document.getElementsByClassName("start");
 var stopButton = document.getElementsByClassName("stop");
 var resetButton = document.getElementsByClassName("reset");
 
@@ -20,27 +19,28 @@ resetButton[0].addEventListener('click',resetClock);
 
 //setting the timer to run after every sec using setInterval method
  function startClock(){ 
-	 id = setInterval(incrementTime,1000); //updates every second
+	 id = setInterval(incrementTime,1000);    //updates every second
+	 startButton[0].style.display = "none";   //start button disappers after click on start button
 }
 
 //inorder to stop we need the id of the interval being set by setInterval method.
+
 function stopClock() {
-  clearInterval(id); //stops the timer
+  clearInterval(id);
+   startButton[0].style.display = "inline";
   id = null;
 }
 
-//it stops the clocl and resets again
+//it stops the clock and resets again
 function resetClock() {
-	stopClock();
-	document.getElementById("watch").innerHTML = "00:00:00"; //resets the timer
-	counter = 0;
+    stopClock();
+    document.getElementById("watch").innerHTML = "00:00:00";  //resets the timer
+    counter = 0;
 }
 
-
-//
-function incrementTime(){  //
-	counter++;  //counter variable for incrementing time 
-	// console.log(counter);
+function incrementTime(){
+	counter++;
+	console.log(counter);
    seconds = counter;
    
    if(seconds >= 60){
@@ -58,15 +58,17 @@ function incrementTime(){  //
    	seconds = "0"+Number(seconds);
 
    if(minutes < 10){
-   	minutes = "0"+Number(minutes);
-   }
-   if(hours < 10){
-	hours = "0"+Number(hours);
-   }
+   		minutes = "0"+Number(minutes);
+   	}
+   	if(hours < 10){
+   		hours = "0"+Number(hours);
+ 
+   	}
 
    	// console.log(hours,minutes,seconds);
 
   var displayTime = hours + ":" + minutes + ":" + seconds; //displays timer as string on webpage
-  document.getElementById("watch").innerHTML = displayTime ;
+  document.getElementById("watch").innerHTML = displayTime 
 }
+
 
