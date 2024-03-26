@@ -12,7 +12,7 @@ var seconds = 0;
 var minutes = 0;
 var hours = 0;
 
-//Adding events to resepective start,stop and reset buttons
+//Adding "click" events to resepective start,stop and reset buttons
 
 startButton[0].addEventListener('click',startClock);
 stopButton[0].addEventListener('click',stopClock);
