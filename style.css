@@ -1,44 +1,41 @@
 
 h1{
-
 	font-style: italic;
 	color:darkcyan;
 	text-decoration: underline;
-     text-shadow: 2px 2px cyan
+	text-shadow: 2px 2px cyan
 }
 
-
 #outer{
-		border: 2px solid black;
-		height:300px;
-		position: center;
-		background-image: linear-gradient(45deg, blue, red)
-	}
-	.timer{
-		border:4px dotted cyan;
-		margin: 40px;
-		color:white;
-	}
+	border: 2px solid black;
+	height:300px;
+	position: center;
+	background-image: linear-gradient(45deg, blue, red)
+}
 
-	.buttons{
-		height: 100px;
+.timer{
+	border:4px dotted cyan;
+	margin: 40px;
+	color:white;
+}
 
-	}
+.buttons{
+	height: 100px;
+}
 
-	.start,.stop,.reset{
-		font-size: 1rem;
-		width: fit-content;
-		margin-top: 20%;
+.start,.stop,.reset{
+	font-size: 1rem;
+	width: fit-content;
+	margin-top: 20%;
+}
 
-	}
-
-   .button {
-	  text-decoration: none;
-	  color: hsla(0, 0%, 90%, 1);
-	  background: linear-gradient(hsla(21, 85%, 51%, 1), hsla(21, 85%, 61%, 1));
-	  border-radius: 10px;
-	  box-shadow: 2px 2px 15px -5px hsla(0, 0%, 0%, 1);
-	}
+.button {  
+  text-decoration: none;
+  color: hsla(0, 0%, 90%, 1);
+  background: linear-gradient(hsla(21, 85%, 51%, 1), hsla(21, 85%, 61%, 1));
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px -5px hsla(0, 0%, 0%, 1);
+}
 
 	.button:hover {
 	  background: linear-gradient(hsl(207.5, 84.8%, 51%), hsla(207, 84%, 62%, 1));
