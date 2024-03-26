@@ -31,8 +31,9 @@ function stopClock() {
 
 //it stops the clocl and resets again
 function resetClock() {
-		stopClock();
-		document.getElementById("watch").innerHTML = "00:00:00"; //resets the timer
+	stopClock();
+	document.getElementById("watch").innerHTML = "00:00:00"; //resets the timer
+	counter = 0;
 }
 
 
